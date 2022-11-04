@@ -30,7 +30,8 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           SizedBox(height: 31,),
-          Text("Advance Your\n\Skills",
+          Text("Advance Your\n\Skills hi ...",
+          
             style: GoogleFonts.poppins(
               fontWeight: FontWeight.w700,fontSize: 22,),
             textAlign: TextAlign.center,
