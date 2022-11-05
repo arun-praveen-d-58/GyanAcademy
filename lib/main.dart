@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gyan_academy/features/home/screens/home_screen.dart';
+import 'package:gyan_academy/features/home/screens/mobile_home_screen.dart';
+import 'package:gyan_academy/features/learningPath/screens/mobile_learningPath_screen1.dart';
 
 import 'constants/global_variables.dart';
+import 'features/learningPath/screens/mobile_learningPath_screen2.dart';
+import 'features/learningPath/screens/mobile_learningPath_screen3.dart';
 
 
 void main() {
@@ -29,6 +32,7 @@ class _MyAppState extends State<MyApp> {
           debugShowCheckedModeBanner: false,
           title: 'Gyan Academy',
           theme: ThemeData(
+            fontFamily: 'Poppins',
              backgroundColor: Colors.white,
               tabBarTheme: TabBarTheme(
                   indicator: UnderlineTabIndicator( // color for indicator (underline)
@@ -49,13 +53,13 @@ class _MyAppState extends State<MyApp> {
         title: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 22,right: 18,top: 10,bottom: 10),
+              padding: EdgeInsets.only(left: 9.w,right: 9.w,top: 10,bottom: 10),
               child: Row(
 
                 children: [
                   SizedBox(
-                      height: 14.h,
-                      width: 20.w,
+                      height: 18,
+                      width: 24,
                       child:  SvgPicture.asset("assets/homeScreen/logo.svg",
                       )
 
@@ -65,13 +69,15 @@ class _MyAppState extends State<MyApp> {
                     textAlign: TextAlign.center,
                     text: TextSpan(
                       children: <TextSpan>[
-                        TextSpan(text: 'Gyan ',style:  GoogleFonts.poppins(textStyle: TextStyle(
-                            fontSize: 12.h,fontWeight: FontWeight.w700,color: GlobalVariables.magenta
-                        ))),
-                        TextSpan(text: 'Academy', style:  GoogleFonts.poppins(textStyle: TextStyle(
-                            fontSize: 12.h,fontWeight: FontWeight.w700,color: GlobalVariables.brightBlue
+                        TextSpan(text: 'Gyan ',style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 13,fontWeight: FontWeight.w700,color: GlobalVariables.magenta
+                        )),
+                        TextSpan(text: 'Academy', style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 13,fontWeight: FontWeight.w700,color: GlobalVariables.brightBlue
                         ),
-                        ),
+
                         ),
                       ],),
                   ),
@@ -81,12 +87,28 @@ class _MyAppState extends State<MyApp> {
                   Spacer(),
 
 
-                  SizedBox(
-                      height: 17.h,
-                      width: 17.w,
-                      child:  SvgPicture.asset("assets/homeScreen/profile.svg",
-                      )
+                  GestureDetector(
+                    onTap: (){
 
+
+                    },
+                    child: GestureDetector(
+                      onTap: (){
+                        /*
+                        account button on-tap
+
+
+                         */
+
+                      },
+                      child: SizedBox(
+                          height: 20,
+                          width: 20,
+                          child:  SvgPicture.asset("assets/homeScreen/profile.svg",
+                          )
+
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -103,7 +125,14 @@ class _MyAppState extends State<MyApp> {
         ),
         ),
 
-        body: HomeScreen(),
+        body: TabBarView(
+          children: [
+            MobHomeScreen(),
+            MobLearningScreen1(),
+            MobLearningScreen2(),
+            MobLearningScreen3()
+          ],
+        ),
         ),
 
 
