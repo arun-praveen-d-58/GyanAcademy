@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:gyan_academy/common/common/custom_button.dart';
-import 'package:gyan_academy/common/common/custom_mob_footer.dart';
+import 'package:gyan_academy/common/custom_button.dart';
+import 'package:gyan_academy/common/custom_mob_footer.dart';
 import 'package:gyan_academy/constants/global_variables.dart';
+import 'package:gyan_academy/features/learningPath/screens/mobile_learningPath_screen1.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 class MobHomeScreen extends StatefulWidget {
+  static const String routeName = '/home-screen';
   const MobHomeScreen({Key? key}) : super(key: key);
 
   @override
@@ -19,6 +21,146 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(
+                  left: 9.w, right: 9.w, top: 10, bottom: 10),
+              child: Row(
+
+                children: [
+                  SizedBox(
+                      height: 15.5,
+                      width: 20.5,
+                      child: SvgPicture.asset(
+                        "assets/homeScreen/logo.svg",
+                      )
+
+                  ),
+                  SizedBox(width: 6,),
+                  RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(text: 'Gyan ', style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: GlobalVariables.magenta
+                        )),
+                        TextSpan(text: 'Academy', style: TextStyle(
+                            fontFamily: "Poppins",
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                            color: GlobalVariables.brightBlue
+                        ),
+
+                        ),
+                      ],),
+                  ),
+
+
+                  Spacer(),
+
+                  GestureDetector(
+                    onTap: () {
+
+                      Navigator.pushNamed(context, MobHomeScreen.routeName);
+                    },
+                    child: SizedBox(
+
+                        child:Text("Bootcamps",
+                          style: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: "Poppins",
+                            color: Colors.black,
+                          ),
+                        )
+
+                    ),
+                  ),
+                  SizedBox(width: 10,),
+                  /*
+                             Expanded(
+                               flex: 3,
+                               child: Container(
+                                  height: 30,
+                                  width: 30,
+                                  decoration: new BoxDecoration(
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                  child: ElevatedButton(
+                                    onPressed: () {
+
+                                      /*
+                know more on tap
+
+                 */
+
+
+                                    },
+                                    child: new Text('Contact Us', style:TextStyle(fontSize: 9,
+                                        fontFamily: "Poppins",
+                                        color: Colors.white,fontWeight: FontWeight.w700
+
+                                    ),
+
+                                    ),
+                                    style:ElevatedButton.styleFrom(
+                                      primary:HexColor("#282B85"),
+                                      elevation: 1,
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(4),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                             ),
+
+                              */
+                  Container(
+                      height: 30,
+
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: HexColor("#282B85"),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(1.0),
+                        child: TextButton(
+                          onPressed: (){
+                            /*
+
+                                     Contact us on tap
+
+                                      */
+
+
+
+                          },  child: new Text('Contact Us', style:TextStyle(fontSize: 9,
+                            fontFamily: "Poppins",
+                            color: Colors.white,fontWeight: FontWeight.w700
+
+                        ),
+
+                        ),
+                        ),
+                      )
+
+
+
+                  ),
+
+                ],
+              ),
+            ),
+
+          ],
+        ),
+      ),
           body: SingleChildScrollView(
 
         child: Column(
@@ -29,6 +171,7 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Flexible(
+                //fit: FlexFit.loose,
                 child: Image.asset("assets/homeScreen/asset_image.png",
                     width:  360,
                     height: 223,
@@ -69,7 +212,7 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
                 know more on tap
 
                  */
-
+                Navigator.pushNamed(context, MobLearningScreen1.routeName);
 
               },
               child: new Text('Know More', style:TextStyle(fontSize: 12,
@@ -319,21 +462,17 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
                                         child: SizedBox(
                                           width: 26.5,
                                           height: 22.5,
-                                          child:SvgPicture.asset("assets/homeScreen/bootcamp_vector.svg",height: 15,width: 15,) ,
+                                          child:SvgPicture.asset("assets/homeScreen/women_vector.svg",height: 15,width: 15,) ,
                                         ),
                                       ),
 
                                       const SizedBox(
                                         width: 10,
                                       ),
-                                      Flexible(
-                                        child: //SizedBox
-                                        Text(
-                                            "Women in Tech",style: TextStyle(fontSize: 17,
-                                                fontFamily: "Poppins",
-                                            color: Colors.white,fontWeight: FontWeight.w500))
-
-                                      ),
+                                      Text(
+                                          "Women in Tech",style: TextStyle(fontSize: 17,
+                                              fontFamily: "Poppins",
+                                          color: Colors.white,fontWeight: FontWeight.w500)),
                                     ],
                                   ),//Text
                                   const SizedBox(
@@ -391,7 +530,10 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
             )
           ),
           SizedBox(height: 30,),
-          Image.asset('assets/homeScreen/Hands using laptop side 1.png',),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: Image.asset('assets/homeScreen/Hands using laptop side 1.png',),
+          ),
           SizedBox(height: 36,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -514,7 +656,12 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
                       SizedBox(height: 65,),
                       CustomButton(text: "Start now", onTap: (){
                        /*
+
+
                        start now on tap
+
+
+
 
                         */
 
@@ -522,6 +669,10 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
                       SizedBox(height: 21.5,),
                       CustomButton(text: "Start Free Trial", onTap: (){
                         /*
+
+
+
+
                         start free trial on tap
                          */
                       }),
@@ -542,15 +693,6 @@ class _MobHomeScreenState extends State<MobHomeScreen> {
                           ),
 
                       SizedBox(height: 21,),
-                      /*
-                      SizedBox(
-                          height: 2,
-                          width:double.infinity,
-                          child: Divider(
-                            color: HexColor("#EBEAED"),
-                          ),
-                      ),
-                      */
 
                           Container(
                             decoration: BoxDecoration(
