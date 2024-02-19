@@ -1,16 +1,5 @@
 # gyan_academy
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![ga2](https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/bca64967-78dc-4c5c-b6eb-193278f87f6d)
+![ga3](https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/b36d4974-e35a-4dbe-9374-c4f442368c73)
+![ga5](https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/1f476a61-d52b-4e17-b698-554c80be3598)
