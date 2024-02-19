@@ -1,22 +1,19 @@
 # gyan_academy
-<img src="https://github.com/arun-praveen-d-58/Instagram_clone/assets/116140047/7b45f0e1-663e-4d06-bbed-d265ec25a9d1" alt="ga1" width="300"/>
-<br><br>
-<br><br>
-<br><br>
-<img src="https://github.com/arun-praveen-d-58/Instagram_clone/assets/116140047/f9272e72-3280-442d-933e-d4ffc33d6531" alt="ga2" width="300"/>
-<br><br>
-<br><br>
-<br><br>
-<img src="https://github.com/arun-praveen-d-58/Instagram_clone/assets/116140047/bff5df66-4e77-49c8-9e27-9fbc94329545" alt="ga3" width="300"/>
-<br><br>
-<br><br>
-<br><br>
-<img src="https://github.com/arun-praveen-d-58/Instagram_clone/assets/116140047/9fd7178b-cd02-40c4-b215-465f112da4b5" alt="ga4" width="300"/>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<img src="https://github.com/arun-praveen-d-58/Instagram_clone/assets/116140047/eecb396d-dbe1-4544-b4bb-6b867e1df81a" alt="ga5" width="300"/>
 
+<img src="https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/b43fc66d-649a-4b8d-81a7-24aad57d70a8" alt="ga1" width="300"/>
+<br><br>
+<br><br>
+<br><br>
+<img src="https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/484cf077-6011-48b0-8d37-8a79fb3749bf" alt="ga2" width="300"/>
+<br><br>
+<br><br>
+<br><br>
+<img src="https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/eb64e3ea-30c6-4d87-b32a-87d9f3165a30" alt="ga3" width="300"/>
+<br><br>
+<br><br>
+<br><br>
+<img src="https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/6409c2bd-740b-489b-8f42-5437df666a7c" alt="ga4" width="300"/>
+<br><br>
+<br><br>
+<br><br>
+<img src="https://github.com/arun-praveen-d-58/GyanAcademy/assets/116140047/366671b9-8572-435f-91af-bfec241cc555" alt="ga5" width="300"/>
